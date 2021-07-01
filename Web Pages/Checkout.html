@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="Project.css">
+  <script src="https://kit.fontawesome.com/71a9de138d.js" crossorigin="anonymous"></script>
+  <script src="Project.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Favicon-->
+<link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">   <!--Favicon-->
+<title>Merch</title>
+  <style type="text/css">html { cursor: url('cursor.cur'), auto; }</style>
+</head>
+
+
+<header>
+  
+    <!--Media Player-->
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbj9Ksq4BAdj" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  
+    
+  <!--Banner-->
+      <div class="banner" style="padding:15px; text-align:center;">
+        <div class="banner-content">
+        <h1>      <center> <a href="Project Home Page.html">
+          <img src="https://logos-download.com/wp-content/uploads/2016/09/Metallica_logo_black.png" alt="Metallica_logo_black" height="100px" width="300px" >
+          </center></a>
+        </h1>
+  
+        </div>
+        </div>  
+      
+        <button style='font-size:24px'> <i class='fas fa-shopping-basket'></i></button>
+
+        
+  <!---Menu Bar/Search Bar-->
+  <center><ul id="myMenu">
+      <li> |<a href="Project Home Page.html">Home</a> |</li>
+      <li>|<a href="About The Band.html">About The Band</a> |</li>
+      <li>|<a href="Tour.html">Tours</a> |</li>
+      <li>|<a href="Discography.html">Discography</a> |</li>
+      <li>|<a href="Gear.html">Gear</a> |</li>
+      <li>|<a href="Merch.html">Merch</a> |</li>
+      <li>|<a href="newsletter.html">Newsletter</a> |</li>
+      <li>|<a href="Sign up log in.html">Fan Club </a> |</li>
+      <li>|<a href="Connect With Us.html">Connect With Us</a> |</li>
+      <li>|<a href="Checkout.html"> CHECKOUT</a></li>
+      <li>|    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Searching.." title="Type in a category" i class="fa fa-search"></i>|</li>
+    </ul></center>
+</header>    
+
+  <script>
+    function myFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+    
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+          
+        }
+      }
+    }
+    </script><!--End of Menu/Search Bar-->
+  
+  
+<body>
+
+
+
+      </style>
+      </head>
+      <body>
+      
+      
+      <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php">
+            
+              <div class="row">
+                <div class="col-50">
+                    <br><br>
+                  <br><h4>Billing Address</h4></div>
+
+                  <br><br>
+                  <div>
+                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Homer Simpson">
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="Homer@Simpson.com">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                  <input type="text" id="adr" name="address" placeholder="123 Fake Street">
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" name="city" placeholder="Springfield">
+      
+       
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h4>Payment</h4></div>
+                  <div>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:whitesmoke;"></i>
+                    <i class="fa fa-cc-amex" style="color:lime;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <br><br>
+                  <div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Mr Burns">
+
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="Smarch">
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2018">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="666">
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+            </form>
+          </div>
+        </div>
+        <br><br>
+        <div class="col-25">
+          <div class="container">
+            <h4> <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+            <p><a href="Justice.jpg">Product 1</a> <span class="price">$19.99</span></p>
+            <p><a href="Metallica Coffee.jpg">Product 2</a> <span class="price">$14.99</span></p>
+            <p><a href="abcs-cover-revision.jp"">Product 3</a> <span class="price">$21.99</span></p>
+            <p><a href="Metallica Monopoly.jpg">Product 4</a> <span class="price">$59.99</span></p>
+            <hr>
+            <p> <span class="price" style="color:black">Total<br><b>$116.96</b>              <input type="submit" value="Pay Now" class="btn">
+            </span></p>
+          </div>
+        </div>
+      </div>
+      
+      </body>
+      </html>

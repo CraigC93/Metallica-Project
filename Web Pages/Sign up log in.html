@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="Project.css">
+  <script src="https://kit.fontawesome.com/71a9de138d.js" crossorigin="anonymous"></script>
+  <script src="Project.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Favicon-->
+<link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">   <!--Favicon-->
+<title>Fanclub</title>
+  <style type="text/css">html { cursor: url('cursor.cur'), auto; }</style>
+</head>
+  
+
+  <header>
+  
+  <!--Media Player-->
+  <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbj9Ksq4BAdj" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+  
+<!--Banner-->
+    <div class="banner" style="padding:15px; text-align:center;">
+      <div class="banner-content">
+      <h1>      <center> <a href="Project Home Page.html">
+        <img src="https://logos-download.com/wp-content/uploads/2016/09/Metallica_logo_black.png" alt="Metallica_logo_black" height="100px" width="300px" >
+        </center></a>
+      </h1>
+
+      </div>
+      </div>  
+    </header>
+
+    
+    
+<!---Menu Bar/Search Bar-->
+<center><ul id="myMenu">
+  <li> |<a href="Project Home Page.html">Home</a> |</li>
+  <li>|<a href="About The Band.html">About The Band</a> |</li>
+  <li>|<a href="Tour.html">Tours</a> |</li>
+  <li>|<a href="Discography.html">Discography</a> |</li>
+  <li>|<a href="Gear.html">Gear</a> |</li>
+  <li>|<a href="Merch.html">Merch</a> |</li>
+  <li>|<a href="newsletter.html">Newsletter</a> |</li>
+  <li>|<a href="Sign up log in.html">Fan Club </a> |</li>
+  <li>|<a href="Connect With Us.html">Connect With Us</a> |</li>
+  <li>|    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Searching.." title="Type in a category" i class="fa fa-search"></i>|</li>
+</ul></center>
+
+<script>         /*Start of Search Bar*/
+  function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+  
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+        
+      }
+    }
+  }
+  </script><!--End of Menu/Search Bar-->
+
+ <br>
+ 
+<!--Background image-->
+ <style>
+
+img {
+  opacity: 2.1;
+}
+  body {      
+   background-image: url("https://img.wattpad.com/207c2c9ac9777549bb6866cc36be0aaacc9cd9e7/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4749354b695575647767665672773d3d2d3138342e3135623039623361633338633838623533353037373935303139322e6a7067?s=fit&w=720&h=720") ;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   
+     }</style>
+<!--Banner-->
+ <style class="navbar">
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  
+  li {
+    float: left;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content: space-evenly;
+  }
+  
+  li a:hover {
+    background-color: #111;
+    justify-content: center;
+    text-align: center;
+  }
+  </style>
+    </head>
+    <body>
+    <br><form action="action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+          <h1>METALLICA FANCLUB LOG IN</h1><br>
+          <br><br><p>To Log In to the Fanclub, please enter your username and password below.</p><br>
+          <br>
+        <form action="action_page.php" method="post">
+            </div>
+          
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+          
+            <div class="clearfix">
+              <button type="button" class="cancelbtn">Cancel</button>
+              
+            </div>
+            <div>     <span class="psw"> <a href="#">Forgot Password?</a></span>
+            </div>
+          </form><br>
+          <br>
+
+          <br><form action="action_page.php" style="border:1px solid #ccc">
+            <div class="container">
+              <h1>METALLICA FANCLUB SIGN UP</h1>
+              <p>To Sign up to the Fanclub, please create your username and password below.</p>
+              <hr>
+          
+              <label for="email"></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <label for="psw-repeat"></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
+          
+              <br><label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+
+              
+          
+              <br><p>By creating an account you agree to our <a href="https://www.termsandconditionsgenerator.com/live.php?token=DhG5XET9Ki65AvzWU3IrpS6qTnOh310t"  target="blank"  style="color:dodgerblue">Terms & Privacy</a>.
+              </p>
+          
+              <div class="clearfix">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </div>
+          </form>
+         
+          <br>
+          <br>
+          <br>
+          <br>
+ 
+          <footer>
+            <div class="banner" style="padding:15px; text-align:center;">
+              <div class="banner-content">
+              <h1>      <center><img src="https://logos-download.com/wp-content/uploads/2016/09/Metallica_logo_black.png" alt="Metallica_logo_black" height="100px" width="500px"</center>
+              </h1>
+              </div>
+          
+              <a href="https://www.facebook.com/Metallica" target="_blank" class="fa fa-facebook"></a>
+              <a href="https://twitter.com/Metallica?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="fa fa-twitter"></a>
+              <a href="https://www.instagram.com/metallica/?hl=en" target="_blank" class="fa fa-instagram"></a>
+              <a href="https://www.youtube.com/channel/UCbulh9WdLtEXiooRcYK7SWw" target="_blank" class="fa fa-youtube"></a>
+              <a href="https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB" target="_blank" class="fa fa-spotify"></a>
+              <a href="https://search.itunes.apple.com/WebObjects/MZContentLink.woa/wa/link?path=metallica" target="_blank" class="fa fa-apple"></a>
+              </footer>
+      
+              <p>Metallica &copy; 2021</p>
+          </body>
+    
+          <button onclick="topFunction()" id="TopButton" title="Go to top">Top </button>
+          <script>
+         mybutton = document.getElementById("TopButton");  
+       
+         </script>
+           
+          </footer>
+</body>
+</html>

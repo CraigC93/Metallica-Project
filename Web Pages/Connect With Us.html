@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="Project.css">
+  <script src="https://kit.fontawesome.com/71a9de138d.js" crossorigin="anonymous"></script>
+  <script src="Project.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Favicon-->
+<link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">   <!--Favicon-->
+<title>Connect With Us</title>
+  <style type="text/css">html { cursor: url('cursor.cur'), auto; }</style>
+</head>
+  
+
+  <header>
+  
+  <!--Media Player-->
+  <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbj9Ksq4BAdj" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+  
+<!--Banner-->
+    <div class="banner" style="padding:15px; text-align:center;">
+      <div class="banner-content">
+      <h1>      <center> <a href="Project Home Page.html">
+        <img src="https://logos-download.com/wp-content/uploads/2016/09/Metallica_logo_black.png" alt="Metallica_logo_black" height="100px" width="300px" >
+        </center></a>
+      </h1>
+
+      </div>
+      </div>  
+    </header>    
+<!---Menu Bar/Search Bar-->
+<center><ul id="myMenu">
+  <li> |<a href="Project Home Page.html">Home</a> |</li>
+  <li>|<a href="About The Band.html">About The Band</a> |</li>
+  <li>|<a href="Tour.html">Tours</a> |</li>
+  <li>|<a href="Discography.html">Discography</a> |</li>
+  <li>|<a href="Gear.html">Gear</a> |</li>
+  <li>|<a href="Merch.html">Merch</a> |</li>
+  <li>|<a href="newsletter.html">Newsletter</a> |</li>
+  <li>|<a href="Sign up log in.html">Fan Club </a> |</li>
+  <li>|<a href="Connect With Us.html">Connect With Us</a> |</li>
+  <li>|<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Searching.." title="Type in a category" i class="fa fa-search"></i>|</li>
+</ul></center>
+
+<script>
+  function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+  
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+        
+      }
+    }
+  }
+  </script><!--End of Menu/Search Bar-->
+
+ <br>
+ 
+<!--Background image-->
+ <style>
+
+img {
+  opacity: 2.1;
+}
+  body {      
+   background-image: url("https://img.wattpad.com/207c2c9ac9777549bb6866cc36be0aaacc9cd9e7/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4749354b695575647767665672773d3d2d3138342e3135623039623361633338633838623533353037373935303139322e6a7067?s=fit&w=720&h=720") ;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   
+     }</style>
+<!--Banner-->
+ <style class="navbar">
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  li {
+    float: left;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content: center;
+  }
+  
+  li a:hover {
+    background-color: #111;
+    justify-content: center;
+    text-align: center;
+  }
+  </style>
+  
+<body>
+  <p>
+    To keep in contact with Metallica or to keep up to date on promotions, news, tour dates and new releases, why not head over to one of our social media accounts or music streaming platforms and check out what's going on in the world of Metallica.</p><br> 
+   
+  <p class="contact"><br>FaceBook<br>  <a href="https://www.facebook.com/Metallica" target="_blank" class="fa fa-facebook"></a><br>
+    Twitter  <a href="https://twitter.com/Metallica?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="fa fa-twitter"></a><br>
+ Instagram  <a href="https://www.instagram.com/metallica/?hl=en" target="_blank" class="fa fa-instagram"></a><br>
+YouTube  <a href="https://www.youtube.com/channel/UCbulh9WdLtEXiooRcYK7SWw" target="_blank" class="fa fa-youtube"></a><br>
+Spotify  <a href="https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB" target="_blank" class="fa fa-spotify"></a><br>
+Apple Music  <a href="https://search.itunes.apple.com/WebObjects/MZContentLink.woa/wa/link?path=metallica" target="_blank" class="fa fa-apple"></a><br>
+
+    <p><br>If you'd like to send a message to the Metallica team, please fill out the contact form below.<br></p>
+
+    <div class="contact">
+      <form action="action_page.php">
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" placeholder="Your Email address..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="ireland">Ireland</option>
+          <option value="usa">USA</option>
+          <option value="japan">Japan</option>
+          <option value="india">India</option>
+          <option value="new zealand">New Zealand</option>
+          <option value="germany">Germany</option>
+          <option value="greece">Greece</option>
+          <option value="italy">Italy</option>
+          <option value="norway">Norway</option>
+          <option value="sweden">Sweden</option>
+          <option value="spain">Spain</option>
+          <option value="portugal">Portugal</option>
+          <option value="greenland">Greenland</option>
+          <option value="russia">Russia</option>
+          <option value="austria">Austria</option>
+          <option value="brazil">Brazil</option>
+          <option value="egypt">Egypt</option>
+          <option value="africa">Africa</option>
+
+
+
+
+
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
+
+
+  </p>
+    <footer>
+      <div class="banner" style="padding:15px; text-align:center;">
+        <div class="banner-content">
+        <h1>      <center><img src="https://logos-download.com/wp-content/uploads/2016/09/Metallica_logo_black.png" alt="Metallica_logo_black" height="100px" width="500px"</center>
+        </h1>
+        </div>
+  
+
+    <p>Metallica &copy; 2021</p>
+  </footer>
+  </body>
+
+  <button onclick="topFunction()" id="TopButton" title="Go to top">Back To Top </button>
+  <script>
+ mybutton = document.getElementById("TopButton");  
+ </script>  
+</html>
